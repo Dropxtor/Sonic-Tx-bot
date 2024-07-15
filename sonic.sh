@@ -43,7 +43,7 @@ read -p "Enter your solana wallet private key: " privkey
 
 echo
 echo -e "${BOLD_BLUE}Creating the Node.js script file${NC}"
-cat << EOF > zun.mjs
+cat << EOF > dropxtor.mjs
 import web3 from "@solana/web3.js";
 import chalk from "chalk";
 import bs58 from "bs58";
@@ -79,4 +79,4 @@ EOF
 
 echo
 echo -e "${BOLD_BLUE}Executing the Node.js script${NC}"
-node zun.mjs
+node dropxtor.mjs
